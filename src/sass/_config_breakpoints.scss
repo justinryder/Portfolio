@@ -1,0 +1,18 @@
+$breakpoints: (
+  small: 30em,
+  medium: 50em,
+  large: 80em
+);
+
+@mixin breakpoint($breakpoint, $direction) {
+  @if $direction == up {
+    $width: '(min-width:';
+  }
+  @if $direction == down {
+    $width: '(max-width:';
+  }
+
+  @media #{$width + map-get($breakpoints, $breakpoint) + ')'} {
+    @content;
+  }
+}

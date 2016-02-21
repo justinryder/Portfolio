@@ -1,11 +1,14 @@
-@import "reset";
-@import "reset.my";
+@import 'reset';
+@import 'reset.my';
 
-$smallSpacing: 1em;
-$largeSpacing: 2em;
+@import 'config';
 
 .pageSection {
   padding: $smallSpacing $largeSpacing;
+
+  @include breakpoint(small, down) {
+    padding: $smallSpacing / 2 $largeSpacing / 2;
+  }
 }
 
 .pageSection + .pageSection {
@@ -17,6 +20,8 @@ $largeSpacing: 2em;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1em;
+  background-color: $pageHeader_backgroundColor;
+  color: $pageHeader_color;
 }
 
 .mainNavLinks {
@@ -35,4 +40,16 @@ $largeSpacing: 2em;
 .hero {
   padding-top: $largeSpacing;
   padding-bottom: $largeSpacing;
+  background: $hero_background;
+  background-size: cover;
+  color: $hero_color;
+
+  &_heading,
+  &_content {
+    max-width: 400px;
+  }
+
+  &_heading {
+    margin-bottom: $smallSpacing / 2;
+  }
 }
