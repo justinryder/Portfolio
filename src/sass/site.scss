@@ -1,0 +1,38 @@
+@import "reset";
+@import "reset.my";
+
+$smallSpacing: 1em;
+$largeSpacing: 2em;
+
+.pageSection {
+  padding: $smallSpacing $largeSpacing;
+}
+
+.pageSection + .pageSection {
+  border-top: 1px solid #999999;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+.mainNavLinks {
+  display: flex;
+}
+
+.mainNavLinks_link {
+  display: flex;
+
+  & + .mainNavLinks_link:before {
+    content: '/';
+    margin: 0 0.5em;
+  }
+}
+
+.hero {
+  padding-top: $largeSpacing;
+  padding-bottom: $largeSpacing;
+}

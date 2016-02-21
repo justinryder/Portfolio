@@ -1,0 +1,47 @@
+{
+	"title": "Armadyne",
+	"type": "academic",
+	"semester": {
+		"classYear": "Junior",
+		"season": "Spring",
+		"year": "2012"
+	},
+	"class": {
+		"courseNumber": "EGD 320",
+		"courseName": "Game Production II"
+	},
+	"credits": [
+		{
+			"name": "Lucas Bilodeau",
+			"role": "Producer, Designer",
+			"url": "//lucasbilodeau.squarespace.com"
+		},
+		{
+			"name": "Justin Ryder",
+			"role": "Programmer",
+			"url": "//www.justin-ryder.com"
+		},
+		{
+			"name": "Mason Fiore",
+			"role": "Programmer",
+			"url": null
+		},
+		{
+			"name": "Eric Kilbride",
+			"role": "Designer",
+			"url": null
+		},
+		{
+			"name": "Erikson Pashke",
+			"role": "Artist",
+			"url": null
+		}
+	],
+	"downloads": [
+		{
+			"os": "Windows",
+			"price": "Free",
+			"url": "https://dl.dropbox.com/u/3239049/Armadyne%20Release/Armadyne.zip"
+		}
+	]
+}

@@ -1,0 +1,91 @@
+[
+	{
+		"employer": {
+			"name": "MyWebGrocer",
+			"website": "//www.mywebgrocer.com",
+			"logoImageSrc": "images/MyWebGrocer-logo.jpg"
+		},
+		"jobTitle": "Junior Software Engineer",
+		"startDate": "June 2013",
+		"endDate": null,
+		"responsibilities": [
+			"Develop new features for the Shopper Identity team.",
+			"Work in a collaborative Agile environment with local and remote team members.",
+			"Use BDD and TDD to ensure a quality product."
+		]
+	},
+	{
+		"employer": {
+			"name": "MyWebGrocer",
+			"website": "//www.mywebgrocer.com",
+			"logoImageSrc": "images/MyWebGrocer-logo.jpg"
+		},
+		"jobTitle": "Software Development Intern",
+		"startDate": "January 2013",
+		"endDate": "May 2013",
+		"responsibilities": [
+			"Rewrote a Visual Basic faxing service as a C# Windows service.",
+			"Wrote and performed unit tests.",
+			"Adhered to company standards for code style."
+		]
+	},
+	{
+		"employer": {
+			"name": "Zone Studios",
+			"website": "//http://www.zone-studios.com/",
+			"logoImageSrc": "images/ZoneStudios-logo.png"
+		},
+		"jobTitle": "Lead Programmer",
+		"startDate": "October 2012",
+		"endDate": "January 2013",
+		"responsibilities": [
+			"Lead and organized a team of three programmers.",
+			"Delegated tasks in an agile format to reach project milestones.",
+			"Facilitated communication of project goals between the lead designer and the programming team."
+		]
+	},
+	{
+		"employer": {
+			"name": "Zone Studios",
+			"website": "//http://www.zone-studios.com/",
+			"logoImageSrc": "images/ZoneStudios-logo.png"
+		},
+		"jobTitle": "Programming Intern",
+		"startDate": "May 2012",
+		"endDate": "August 2012",
+		"responsibilities": [
+			"Worked remotely to create a demo of Conquest.",
+			"Acted as a technical advisor for the lead designer.",
+			"Created a time/risk analysis for milestone goals."
+		]
+	},
+	{
+		"employer": {
+			"name": "Champlain College",
+			"website": "//http://www.champlain.edu/",
+			"logoImageSrc": "images/ZoneStudios-logo.jpg"
+		},
+		"jobTitle": "IT Support Consultant",
+		"startDate": "January 2012",
+		"endDate": "April  2012",
+		"responsibilities": [
+			"Maintained lab computers by performing software installations and updates.",
+			"Provided troubleshooting assistance for students and faculty.",
+			"Advised faculty on the positive and negative consequences of mid-semester software updates."
+		]
+	},
+	{
+		"employer": {
+			"name": "Champlain College",
+			"website": "//http://www.champlain.edu/",
+			"logoImageSrc": "images/ZoneStudios-logo.jpg"
+		},
+		"jobTitle": "C++ Tutor",
+		"startDate": "September 2011",
+		"endDate": "December 2011",
+		"responsibilities": [
+			"Helped struggling students gain a thorough understanding of core concepts such as: syntax, encapsulation, abstraction, inheritance, polymorphism, pointer manipulation, memory management, data structures and algorithms, and Big O notation",
+			"Taught students how to use various resources to find solutions for their problems."
+		]
+	}
+]
