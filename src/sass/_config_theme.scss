@@ -1,5 +1,10 @@
+$page_font: 'Open Sans Condensed', sans-serif !default;
+
 $pageHeader_backgroundColor: #333333 !default;
 $pageHeader_color: #FFFFFF !default;
 
 $hero_background: center url('/img/Armadyne_Level_01.png') !default;
 $hero_color: #FFFFFF !default;
+
+$pageFooter_backgroundColor: $pageHeader_backgroundColor !default;
+$pageFooter_color: $pageHeader_color !default;

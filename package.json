@@ -20,5 +20,8 @@
     "watch:css": "gulp watch:css",
     "watch:html": "gulp watch:html",
     "watch:js": "gulp watch:js"
+  },
+  "dependencies": {
+    "syntaxhighlighter": "^4.0.1"
   }
 }

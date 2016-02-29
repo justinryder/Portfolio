@@ -104,14 +104,14 @@ h5 {
 h6 {
   font-size: 1.2rem; }
 
+html {
+  font-family: "Open Sans Condensed", sans-serif; }
+
 .pageSection {
   padding: 1em 2em; }
   @media (max-width: 30em) {
     .pageSection {
       padding: 0.5em 1em; } }
-
-.pageSection + .pageSection {
-  border-top: 1px solid #999999; }
 
 .pageHeader {
   display: flex;
@@ -131,6 +131,7 @@ h6 {
     margin: 0 0.5em; }
 
 .hero {
+  max-width: 100%;
   padding-top: 2em;
   padding-bottom: 2em;
   background: center url("/img/Armadyne_Level_01.png");
@@ -140,3 +141,10 @@ h6 {
     max-width: 400px; }
   .hero_heading {
     margin-bottom: 0.5em; }
+  .hero_image {
+    max-width: 100%;
+    max-height: 100%; }
+
+.pageFooter {
+  background-color: #333333;
+  color: #FFFFFF; }
