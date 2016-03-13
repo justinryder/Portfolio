@@ -1,72 +1,14 @@
-@import 'reset';
-@import 'reset.my';
+@import 'utils';
+@import 'config/config';
 
-@import 'config';
+@import 'reset/reset';
+@import 'reset/reset.my';
 
 html {
   font-family: $page_font;
 }
 
-.pageSection {
-  padding: $smallSpacing $largeSpacing;
-
-  @include breakpoint(small, down) {
-    padding: $smallSpacing / 2 $largeSpacing / 2;
-  }
-
-  & + .pageSection {
-    // border-top: 1px solid #999999;
-  }
-}
-
-.pageHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em 1em;
-
-  background-color: $pageHeader_backgroundColor;
-  color: $pageHeader_color;
-}
-
-.mainNavLinks {
-  display: flex;
-}
-
-.mainNavLinks_link {
-  display: flex;
-
-  & + .mainNavLinks_link:before {
-    content: '/';
-    margin: 0 0.5em;
-  }
-}
-
-.hero {
-  max-width: 100%;
-  padding-top: $largeSpacing;
-  padding-bottom: $largeSpacing;
-
-  background: $hero_background;
-  background-size: cover;
-  color: $hero_color;
-
-  &_heading,
-  &_content {
-    max-width: 400px;
-  }
-
-  &_heading {
-    margin-bottom: $smallSpacing / 2;
-  }
-
-  &_image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-
-.pageFooter {
-  background-color: $pageFooter_backgroundColor;
-  color: $pageFooter_color;
-}
+@import 'bulletedList';
+@import 'page/page';
+@import 'mainNavLinks';
+@import 'hero';

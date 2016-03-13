@@ -1,0 +1,28 @@
+.hero {
+  max-width: 100%;
+  padding-top: $largeSpacing;
+  padding-bottom: $largeSpacing;
+
+  background: $hero_background;
+  background-size: cover;
+  color: $hero_color;
+
+  &_heading,
+  &_content {
+    max-width: toRem(400px);
+  }
+
+  &_heading {
+    margin-bottom: $smallSpacing / 2;
+    font-size: $hero_heading_fontSize;
+  }
+
+  &_content {
+    font-size: $hero_content_fontSize;
+  }
+
+  &_image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

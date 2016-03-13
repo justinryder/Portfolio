@@ -1,0 +1,17 @@
+.pageSection {
+  padding: $smallSpacing $largeSpacing;
+
+  @include breakpoint(small, down) {
+    padding: $smallSpacing / 2 $largeSpacing / 2;
+  }
+
+  & + & {
+    // border-top: 1px solid #999999;
+  }
+
+  &_header {
+    font-size: $pageSection_header_fontSize;
+    font-weight: $pageSection_header_fontWeight;
+    margin: 0 0 1em;
+  }
+}

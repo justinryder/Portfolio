@@ -1,0 +1,33 @@
+.pageContent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  &-primary {
+
+  }
+
+  &-secondary {
+
+  }
+
+  &_header {
+    font-weight: $pageContent_header_fontWeight;
+    font-size: $pageContent_header_fontSize;
+
+    & + &:before {
+      content: '-';
+      display: inline-block;
+      margin: 0 0.25em;
+    }
+
+    &-sub {
+      font-weight: $pageContent_header-sub_fontWeight;
+      font-size: $pageContent_header-sub_fontSize;
+    }
+  }
+
+  &_section {
+    //flex:
+  }
+}

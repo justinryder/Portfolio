@@ -1,0 +1,12 @@
+.mainNavLinks {
+  display: flex;
+}
+
+.mainNavLinks_link {
+  display: flex;
+
+  & + .mainNavLinks_link:before {
+    content: '/';
+    margin: 0 0.5em;
+  }
+}

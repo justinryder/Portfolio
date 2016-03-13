@@ -1,0 +1,17 @@
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+
+  background-color: $pageHeader_backgroundColor;
+  color: $pageHeader_color;
+
+  &_heading {
+    font-size: $pageHeader_heading_fontSize;
+  }
+
+  &_nav {
+    font-size: $pageHeader_nav_fontSize;
+  }
+}

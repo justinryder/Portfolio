@@ -1,0 +1,22 @@
+$page_font: 'Open Sans Condensed', sans-serif !default;
+
+$pageHeader_backgroundColor: #333333 !default;
+$pageHeader_color: #FFFFFF !default;
+$pageHeader_heading_fontSize: toRem(42px) !default;
+$pageHeader_nav_fontSize: toRem(22px) !default;
+
+$pageSection_header_fontSize: toRem(22px) !default;
+$pageSection_header_fontWeight: bold !default;
+
+$pageFooter_backgroundColor: $pageHeader_backgroundColor !default;
+$pageFooter_color: $pageHeader_color !default;
+
+$hero_background: center url('/img/Armadyne_Level_01.png') !default;
+$hero_color: #FFFFFF !default;
+$hero_heading_fontSize: toRem(26px) !default;
+$hero_content_fontSize: toRem(16px) !default;
+
+$pageContent_header_fontSize: toRem(26px) !default;
+$pageContent_header_fontWeight: bold !default;
+$pageContent_header-sub_fontSize: toRem(20px) !default;
+$pageContent_header-sub_fontWeight: normal !default;
