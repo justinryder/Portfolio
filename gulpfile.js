@@ -1,8 +1,11 @@
 'use strict';
 
 var gulp = require('gulp'),
+    handlebars = require('handlebars'),
     sass = require('gulp-sass'),
-    mergeStream = require('merge-stream')
+    File = require('vinyl'),
+    mergeStream = require('merge-stream'),
+    through = require('through2')
 
 /**
 * build tasks
@@ -16,9 +19,31 @@ function buildCss() {
 
 gulp.task('build:css', buildCss)
 
+function buildHandlebars() {
+  return gulp.src('src/handlebars/*.handlebars')
+  .pipe(through.obj(function(templateFile, templateEncoding, templateCallback) {
+    var templateName = templateFile.relative.split('.')[0],
+    template = handlebars.compile(templateFile.contents.toString())
+
+    gulp.src('src/json/' + templateName + '/*.json')
+    .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
+      var newFile = dataFile.clone()
+      newFile.contents = new Buffer(template(JSON.parse(dataFile.contents.toString())))
+      newFile.path = newFile.path.split('.')[0] + '.html'
+
+      dataCallback(null, newFile)
+    }))
+    .pipe(gulp.dest('app/' + templateName))
+
+    templateCallback()
+  }))
+}
+
+gulp.task('build:handlebars', buildHandlebars)
+
 function buildHtml() {
   return gulp.src('./src/html/**/*.html')
-    .pipe(gulp.dest('./app'))
+      .pipe(gulp.dest('./app'))
 }
 
 gulp.task('build:html', buildHtml)
@@ -40,6 +65,7 @@ gulp.task('build:js', buildJs)
 gulp.task('build', function () {
   return mergeStream(
     buildCss(),
+    buildHandlebars(),
     buildHtml(),
     buildImg(),
     buildJs())
@@ -54,6 +80,12 @@ function watchCss() {
 }
 
 gulp.task('watch:css', watchCss)
+
+function watchHandlebars() {
+  gulp.watch('src/handlebars/*.handlebars', ['build:handlebars'])
+}
+
+gulp.task('watch:handlebars', watchHandlebars)
 
 function watchHtml() {
   gulp.watch('./src/**/*.html', ['build:html'])
@@ -75,6 +107,7 @@ gulp.task('watch:js', watchJs)
 
 gulp.task('watch', function () {
   watchCss()
+  watchHandlebars()
   watchHtml()
   watchImg()
   watchJs()

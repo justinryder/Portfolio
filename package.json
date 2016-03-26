@@ -9,15 +9,20 @@
     "express": "^4.13.4",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.2.0",
-    "merge-stream": "^1.0.0"
+    "handlebars": "^4.0.5",
+    "merge-stream": "^1.0.0",
+    "through2": "^2.0.1",
+    "vinyl": "^1.1.1"
   },
   "scripts": {
     "build": "gulp build",
     "build:css": "gulp build:css",
+    "build:handlebars": "gulp build:handlebars",
     "build:html": "gulp build:html",
     "build:js": "gulp build:js",
     "watch": "gulp watch",
     "watch:css": "gulp watch:css",
+    "watch:handlebars": "gulp watch:handlebars",
     "watch:html": "gulp watch:html",
     "watch:js": "gulp watch:js"
   },
