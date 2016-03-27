@@ -1,0 +1,14 @@
+{{#each contents}}
+  {{#if text}}
+    <p>{{text}}</p>
+  {{/if}}
+  {{#if list}}
+    {{> list}}
+  {{/if}}
+  {{#if code}}
+    {{> code code}}
+  {{/if}}
+  {{#if aside}}
+    {{> aside aside}}
+  {{/if}}
+{{/each}}

@@ -43,11 +43,23 @@ function buildCss() {
 
 gulp.task('build:css', buildCss)
 
+gulp.task('register:partials', function() {
+  return gulp.src('src/handlebars/partials/*.handlebars')
+    .pipe(through.obj(function(partialFile, partialEncoding, partialCallback) {
+      var partialName = partialFile.relative.split('.')[0],
+          partial = partialFile.contents.toString()
+      handlebars.registerPartial(partialName, partial)
+      partialCallback()
+    }))
+})
+
 function buildHandlebars() {
-  return gulp.src('src/handlebars/*.handlebars')
+  return gulp.src('src/handlebars/pages/*.handlebars')
   .pipe(through.obj(function(templateFile, templateEncoding, templateCallback) {
     var templateName = templateFile.relative.split('.')[0],
-    template = handlebars.compile(templateFile.contents.toString())
+        template = handlebars.compile(templateFile.contents.toString(), {
+          preventIndent: true
+        })
 
     gulp.src('src/json/' + templateName + '/*.json')
     .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
@@ -84,7 +96,7 @@ function buildHandlebars() {
   }))
 }
 
-gulp.task('build:handlebars', buildHandlebars)
+gulp.task('build:handlebars', ['register:partials'], buildHandlebars)
 
 function buildHtml() {
   return gulp.src('./src/html/**/*.html')
@@ -107,7 +119,7 @@ function buildJs() {
 
 gulp.task('build:js', buildJs)
 
-gulp.task('build', function () {
+gulp.task('build', ['register:partials'], function () {
   return mergeStream(
     buildCss(),
     buildHandlebars(),
