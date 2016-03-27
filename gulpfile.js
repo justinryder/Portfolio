@@ -4,8 +4,32 @@ var gulp = require('gulp'),
     handlebars = require('handlebars'),
     sass = require('gulp-sass'),
     File = require('vinyl'),
+    fs = require('fs'),
     mergeStream = require('merge-stream'),
     through = require('through2')
+
+/**
+* helper methods
+*/
+
+function logException(exception, message) {
+  console.log(message)
+  console.log('==== Exception Details ====')
+  console.log(exception)
+}
+
+function replaceCodeLinks(obj) {
+  for (var prop in obj) {
+    if (obj.hasOwnProperty(prop)) {
+      if (prop == 'code') {
+        return obj[prop].text = fs.readFileSync('./src/code/' + obj[prop].src, 'utf8').toString()
+      }
+      if (typeof obj[prop] == "object") {
+        replaceCodeLinks(obj[prop])
+      }
+    }
+  }
+}
 
 /**
 * build tasks
@@ -28,13 +52,28 @@ function buildHandlebars() {
     gulp.src('src/json/' + templateName + '/*.json')
     .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
       var newFile = dataFile.clone()
+
       try {
-        newFile.contents = new Buffer(template(JSON.parse(dataFile.contents.toString())))
-      } catch (exception) {
-        console.log('Error compiling template ' + templateFile.relative + ' with ' + dataFile.relative)
-        console.log('====Exception Details====\n', exception)
+        var templateData = JSON.parse(dataFile.contents.toString())
+      } catch (ex) {
+        logException(ex, 'Error parsing ' + dataFile.relative)
         return dataCallback()
       }
+
+      try {
+        replaceCodeLinks(templateData)
+      } catch (ex) {
+        logException(ex, 'Error replacing code links in ' + dataFile.relative)
+        return dataCallback()
+      }
+
+      try {
+        newFile.contents = new Buffer(template(templateData))
+      } catch (ex) {
+        logException(ex, 'Error compiling template ' + templateFile.relative + ' with ' + dataFile.relative)
+        return dataCallback()
+      }
+
       newFile.path = newFile.path.split('.')[0] + '.html'
 
       dataCallback(null, newFile)
