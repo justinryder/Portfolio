@@ -28,7 +28,13 @@ function buildHandlebars() {
     gulp.src('src/json/' + templateName + '/*.json')
     .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
       var newFile = dataFile.clone()
-      newFile.contents = new Buffer(template(JSON.parse(dataFile.contents.toString())))
+      try {
+        newFile.contents = new Buffer(template(JSON.parse(dataFile.contents.toString())))
+      } catch (exception) {
+        console.log('Error compiling template ' + templateFile.relative + ' with ' + dataFile.relative)
+        console.log('====Exception Details====\n', exception)
+        return dataCallback()
+      }
       newFile.path = newFile.path.split('.')[0] + '.html'
 
       dataCallback(null, newFile)
@@ -82,7 +88,11 @@ function watchCss() {
 gulp.task('watch:css', watchCss)
 
 function watchHandlebars() {
-  gulp.watch('src/handlebars/*.handlebars', ['build:handlebars'])
+  gulp.watch([
+    'src/handlebars/*.handlebars',
+    'src/json/**/*.json'
+  ],
+  ['build:handlebars'])
 }
 
 gulp.task('watch:handlebars', watchHandlebars)
