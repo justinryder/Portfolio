@@ -59,7 +59,12 @@ function buildHandlebars() {
     var templateName = templateFile.relative.split('.')[0],
         template = handlebars.compile(templateFile.contents.toString(), {
           preventIndent: true
-        })
+        }),
+        dest = 'app'
+
+    if (templateName != 'index') {
+      dest += '/' + templateName
+    }
 
     gulp.src('src/json/' + templateName + '/*.json')
     .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
@@ -90,20 +95,13 @@ function buildHandlebars() {
 
       dataCallback(null, newFile)
     }))
-    .pipe(gulp.dest('app/' + templateName))
+    .pipe(gulp.dest(dest))
 
     templateCallback()
   }))
 }
 
 gulp.task('build:handlebars', ['register:partials'], buildHandlebars)
-
-function buildHtml() {
-  return gulp.src('./src/html/**/*.html')
-      .pipe(gulp.dest('./app'))
-}
-
-gulp.task('build:html', buildHtml)
 
 function buildImg() {
   return gulp.src('./src/img/**/*')
@@ -123,7 +121,6 @@ gulp.task('build', ['register:partials'], function () {
   return mergeStream(
     buildCss(),
     buildHandlebars(),
-    buildHtml(),
     buildImg(),
     buildJs())
 })
@@ -140,19 +137,13 @@ gulp.task('watch:css', watchCss)
 
 function watchHandlebars() {
   gulp.watch([
-    'src/handlebars/*.handlebars',
+    'src/handlebars/**/*.handlebars',
     'src/json/**/*.json'
   ],
   ['build:handlebars'])
 }
 
 gulp.task('watch:handlebars', watchHandlebars)
-
-function watchHtml() {
-  gulp.watch('./src/**/*.html', ['build:html'])
-}
-
-gulp.task('watch:html', watchHtml)
 
 function watchImg() {
   gulp.watch('./src/img/**/*', ['build:img'])
@@ -169,7 +160,6 @@ gulp.task('watch:js', watchJs)
 gulp.task('watch', function () {
   watchCss()
   watchHandlebars()
-  watchHtml()
   watchImg()
   watchJs()
 })
