@@ -5,6 +5,7 @@ $breakpoints: (
 );
 
 @mixin breakpoint($breakpoint, $direction) {
+  $width: '(max-width:';
   @if $direction == up {
     $width: '(min-width:';
   }
