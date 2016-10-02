@@ -3,18 +3,19 @@
 	{{> head title="Justin Ryder - Resume"}}
 	<body>
 		{{> header}}
-		<article role="main" class="pageContent">
-			<h2 class="pageContent_header">Justin Ryder - Resume</h2>
+		<article role="main">
+			<section class="hero pageSection">
+				<h2 class="hero_heading">Justin Ryder - Resume</h2>
+			</section>
 			{{#each jobs}}
-				<section class="pageContent_section pageSection">
-					<h3 class="pageSection_header">
+				<section class="pageSection">
+					<h4 class="pageSection_header">{{jobTitle}}</h4>
+					<h3 class="pageSection_header pageSection_header-sub">
 						<a href="{{employer.website}}">{{employer.name}}</a>
 					</h3>
-					<h4 class="pageSection_header pageSection_header-sub">{{jobTitle}}</h4>
 					<div>
 						{{startDate}} - {{endDate}}
 					</div>
-					<h5 class="pageSection_header pageSection_header-sub">Responsibilities</h5>
 					<ul class="bulletedList">
 						{{#each responsibilities}}
 							<li class="bulletedList_item">

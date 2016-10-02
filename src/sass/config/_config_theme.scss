@@ -1,4 +1,5 @@
 $page_font: 'Open Sans Condensed', sans-serif !default;
+$page_color: #333333 !default;
 
 $pageHeader_backgroundColor: #333333 !default;
 $pageHeader_color: #FFFFFF !default;
@@ -7,6 +8,8 @@ $pageHeader_nav_fontSize: toRem(22px) !default;
 
 $pageSection_header_fontSize: toRem(22px) !default;
 $pageSection_header_fontWeight: bold !default;
+$pageSection_header-sub_fontSize: toRem(18px) !default;
+$pageSection_header-sub_fontWeight: normal !default;
 
 $pageFooter_backgroundColor: $pageHeader_backgroundColor !default;
 $pageFooter_color: $pageHeader_color !default;
@@ -20,3 +23,6 @@ $pageContent_header_fontSize: toRem(26px) !default;
 $pageContent_header_fontWeight: bold !default;
 $pageContent_header-sub_fontSize: toRem(20px) !default;
 $pageContent_header-sub_fontWeight: normal !default;
+
+$link_color: #91AB1C !default;
+$link-visited_color: #718516 !default;

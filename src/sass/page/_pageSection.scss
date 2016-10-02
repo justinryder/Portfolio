@@ -10,12 +10,19 @@
   }
 
   &_header {
+    display: inline-block;
     font-size: $pageSection_header_fontSize;
     font-weight: $pageSection_header_fontWeight;
     margin: 0 0 1em;
 
+    & + &:before {
+      content: '-';
+      margin: 0 0.25em;
+    }
+
     &-sub {
-      
+      font-size: $pageSection_header-sub_fontSize;
+      font-weight: $pageSection_header-sub_fontWeight;
     }
   }
 }

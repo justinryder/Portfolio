@@ -1,0 +1,12 @@
+a {
+  color: $link_color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $link-visited_color;
+  }
+}

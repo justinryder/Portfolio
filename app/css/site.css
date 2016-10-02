@@ -93,7 +93,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem; }
 
 html {
-  font-family: "Open Sans Condensed", sans-serif; }
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #333333; }
+
+a {
+  color: #91AB1C;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  a:visited {
+    color: #718516; }
 
 .bulletedList {
   list-style-type: disc;
@@ -106,9 +115,16 @@ html {
     .pageSection {
       padding: 0.5em 1em; } }
   .pageSection_header {
+    display: inline-block;
     font-size: 1.375rem;
     font-weight: bold;
     margin: 0 0 1em; }
+    .pageSection_header + .pageSection_header:before {
+      content: '-';
+      margin: 0 0.25em; }
+    .pageSection_header-sub {
+      font-size: 1.125rem;
+      font-weight: normal; }
 
 .pageHeader {
   display: flex;
