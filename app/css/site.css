@@ -125,6 +125,8 @@ a {
     .pageSection_header-sub {
       font-size: 1.125rem;
       font-weight: normal; }
+    .pageSection_header img {
+      vertical-align: middle; }
 
 .pageHeader {
   display: flex;

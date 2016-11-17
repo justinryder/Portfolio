@@ -3,15 +3,27 @@
 	{{> head title="Justin Ryder - Resume"}}
 	<body>
 		{{> header}}
-		<article role="main">
+		<article role="main" class="resume">
 			<section class="hero pageSection">
 				<h2 class="hero_heading">Resume</h2>
 			</section>
 			{{#each jobs}}
-				<section class="pageSection">
+				<section class="pageSection resume_job">
 					<h4 class="pageSection_header">{{jobTitle}}</h4>
 					<h3 class="pageSection_header pageSection_header-sub">
-						<a href="{{employer.website}}">{{employer.name}}</a>
+						<a href="{{employer.website}}">
+							{{#if employer.img}}
+								<img
+									src="{{employer.img.src}}"
+									alt="{{employer.img.alt}} Logo"
+									title="{{employer.name}}"
+									style="
+										width:{{employer.img.width}};
+										height:{{employer.img.height}};" />
+							{{else}}
+								{{employer.name}}
+							{{/if}}
+						</a>
 					</h3>
 					<div>
 						{{startDate}} - {{endDate}}

@@ -4,7 +4,12 @@
   		"employer": {
   			"name": "MyWebGrocer",
   			"website": "//www.mywebgrocer.com",
-  			"logoImageSrc": "images/MyWebGrocer-logo.jpg"
+        "img": {
+          "src": "/img/MyWebGrocer-logo.svg",
+          "alt": "MyWebGrocer Logo",
+          "width": "auto",
+          "height": "1em"
+        }
   		},
   		"jobTitle": "Junior Software Engineer",
   		"startDate": "June 2013",
@@ -19,7 +24,12 @@
   		"employer": {
   			"name": "MyWebGrocer",
   			"website": "//www.mywebgrocer.com",
-  			"logoImageSrc": "images/MyWebGrocer-logo.jpg"
+        "img": {
+          "src": "/img/MyWebGrocer-logo.svg",
+          "alt": "MyWebGrocer Logo",
+          "width": "auto",
+          "height": "1em"
+        }
   		},
   		"jobTitle": "Software Development Intern",
   		"startDate": "January 2013",
@@ -33,8 +43,13 @@
   	{
   		"employer": {
   			"name": "Zone Studios",
-  			"website": "//http://www.zone-studios.com/",
-  			"logoImageSrc": "images/ZoneStudios-logo.png"
+  			"website": "//zone-studios.com",
+  			"img": {
+          "src": "/img/ZoneStudios-logo.png",
+          "alt": "Zone Studios Logo",
+          "width": "auto",
+          "height": "2em"
+        }
   		},
   		"jobTitle": "Lead Programmer",
   		"startDate": "October 2012",
@@ -48,8 +63,13 @@
   	{
   		"employer": {
   			"name": "Zone Studios",
-  			"website": "//http://www.zone-studios.com/",
-  			"logoImageSrc": "images/ZoneStudios-logo.png"
+  			"website": "//zone-studios.com",
+  			"img": {
+          "src": "/img/ZoneStudios-logo.png",
+          "alt": "Zone Studios Logo",
+          "width": "auto",
+          "height": "2em"
+        }
   		},
   		"jobTitle": "Programming Intern",
   		"startDate": "May 2012",
@@ -63,8 +83,13 @@
   	{
   		"employer": {
   			"name": "Champlain College",
-  			"website": "//http://www.champlain.edu/",
-  			"logoImageSrc": "images/ZoneStudios-logo.jpg"
+  			"website": "//champlain.edu",
+  			"img": {
+          "src": "/img/ChamplainCollege-logo.jpg",
+          "alt": "Champlain College Logo",
+          "width": "auto",
+          "height": "4em"
+        }
   		},
   		"jobTitle": "IT Support Consultant",
   		"startDate": "January 2012",
@@ -78,8 +103,13 @@
   	{
   		"employer": {
   			"name": "Champlain College",
-  			"website": "//http://www.champlain.edu/",
-  			"logoImageSrc": "images/ZoneStudios-logo.jpg"
+  			"website": "//champlain.edu",
+  			"img": {
+          "src": "/img/ChamplainCollege-logo.jpg",
+          "alt": "Champlain College Logo",
+          "width": "auto",
+          "height": "4em"
+        }
   		},
   		"jobTitle": "C++ Tutor",
   		"startDate": "September 2011",

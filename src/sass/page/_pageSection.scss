@@ -24,5 +24,9 @@
       font-size: $pageSection_header-sub_fontSize;
       font-weight: $pageSection_header-sub_fontWeight;
     }
+
+    img {
+      vertical-align: middle;
+    }
   }
 }
