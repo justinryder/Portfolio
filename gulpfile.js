@@ -132,6 +132,9 @@ gulp.task('build', ['register:partials'], function () {
 
 function watchCss() {
   gulp.watch('./src/sass/**/*.scss', ['build:css'])
+  .on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type);
+  })
 }
 
 gulp.task('watch:css', watchCss)
@@ -142,18 +145,27 @@ function watchHandlebars() {
     'src/json/**/*.json'
   ],
   ['build:handlebars'])
+  .on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type);
+  })
 }
 
 gulp.task('watch:handlebars', watchHandlebars)
 
 function watchImg() {
   gulp.watch('./src/img/**/*', ['build:img'])
+  .on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type);
+  })
 }
 
 gulp.task('watch:img', watchImg)
 
 function watchJs() {
   gulp.watch('./src/js/**/*.js', ['build:js'])
+  .on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type);
+  })
 }
 
 gulp.task('watch:js', watchJs)
