@@ -63,7 +63,7 @@ function buildHandlebars() {
         dest = 'app'
 
     // TODO: Make a configurable way to do this
-    if (templateName != 'index' && templateName != 'resume') {
+    if (templateName != 'index' && templateName != 'resume' && templateName != '404') {
       dest += '/' + templateName
     }
 
