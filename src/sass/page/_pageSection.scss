@@ -1,5 +1,6 @@
 .pageSection {
   padding: $smallSpacing $largeSpacing;
+  background-color: $pageSection_backgroundColor;
 
   @include breakpoint(small, down) {
     padding: $smallSpacing / 2 $largeSpacing / 2;

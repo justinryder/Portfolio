@@ -9,6 +9,7 @@ html {
   color: $page_color;
 }
 
+@import 'grid';
 @import 'links';
 @import 'bulletedList';
 @import 'page/page';
