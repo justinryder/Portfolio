@@ -118,12 +118,20 @@ function buildJs() {
 
 gulp.task('build:js', buildJs)
 
+function buildRoot() {
+  return gulp.src('./src/root/**/*')
+    .pipe(gulp.dest('./app'))
+}
+
+gulp.task('build:root', buildRoot)
+
 gulp.task('build', ['register:partials'], function () {
   return mergeStream(
     buildCss(),
     buildHandlebars(),
     buildImg(),
-    buildJs())
+    buildJs(),
+    buildRoot())
 })
 
 /**
@@ -170,11 +178,19 @@ function watchJs() {
 
 gulp.task('watch:js', watchJs)
 
+function watchRoot() {
+  gulp.watch('./src/root/**/*', ['build:root'])
+  .on('change', function(event) {
+    console.log('File ' + event.path + ' was ' + event.type);
+  })
+}
+
 gulp.task('watch', function () {
   watchCss()
   watchHandlebars()
   watchImg()
   watchJs()
+  watchRoot()
 })
 
 /**
