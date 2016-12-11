@@ -1,0 +1,86 @@
+{
+	"title": "Baby Boomer",
+	"type": "hackathon",
+  "technologies": [
+    {
+      "name": "AngularJS"
+    }
+  ],
+	"credits": [
+		{
+			"name": "Alex Toulan",
+			"role": "Programmer",
+			"url": "//github.com/AlexToulan"
+		},
+		{
+			"name": "Colin Koponen-Robotham",
+			"role": "Programmer",
+			"url": "//github.com/rKaic"
+		},
+		{
+			"name": "Ellery Ross-Reid",
+			"role": "Artist",
+			"url": "//github.com/erossreid"
+		},
+		{
+			"name": "Justin Ryder",
+			"role": "Programmer",
+			"url": "//www.justin-ryder.com"
+		}
+	],
+	"downloads": [
+	],
+  "hero": {
+    "img": {
+      "src": "/img/BabyBoomer.png",
+      "alt": "Baby Boomer"
+    }
+  },
+  "pageSections": [
+    {
+      "heading": "About this Project",
+      "contents": [
+        {
+          "text": "Play as an Armadyne, an armadillo/porcupine hybris, and race to victory! Use your hardened shell to race at insane speeds, then use your spikes to scale walls! Collect power-ups to disadvantage your opponents and win!"
+        },
+        {
+          "list": [
+            {
+              "text": "What I did for this project"
+            },
+            {
+              "text": "Another thing I did for this project"
+            },
+            {
+              "text": "I was in charge of doing this thing as well"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Another Section",
+      "contents": [
+        {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dui risus, pellentesque sed sollicitudin placerat, vehicula at nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc mattis maximus nisl eget pulvinar. Maecenas velit ex, pretium sed vulputate at, euismod egestas orci. Maecenas urna orci, molestie et mi vitae, ultrices imperdiet urna. Quisque feugiat nisl purus, quis finibus nulla vulputate ut. Nunc nunc turpis, viverra quis consectetur at, accumsan vitae orci. Nulla ultricies pellentesque ultricies."
+        },
+        {
+          "code": {
+            "type": "scss",
+            "src": "armadyne_example1.txt"
+          }
+        },
+        {
+          "aside": {
+            "heading": "Content Callout",
+            "contents": [
+              {
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dui risus, pellentesque sed sollicitudin placerat, vehicula at nisi."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

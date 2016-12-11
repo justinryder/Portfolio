@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp'),
+    del = require('del'),
     handlebars = require('handlebars'),
     sass = require('gulp-sass'),
     File = require('vinyl'),
@@ -125,7 +126,7 @@ function buildRoot() {
 
 gulp.task('build:root', buildRoot)
 
-gulp.task('build', ['register:partials'], function () {
+gulp.task('build', ['clean', 'register:partials'], function () {
   return mergeStream(
     buildCss(),
     buildHandlebars(),
@@ -133,6 +134,16 @@ gulp.task('build', ['register:partials'], function () {
     buildJs(),
     buildRoot())
 })
+
+/**
+* clean tasks
+*/
+
+function clean() {
+  return del(['./app/**/*'])
+}
+
+gulp.task('clean', clean)
 
 /**
 * watch tasks

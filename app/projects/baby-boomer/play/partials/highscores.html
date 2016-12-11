@@ -1,0 +1,13 @@
+<div class="high-scores">
+  <h1>High Scores</h1>
+  <ul>
+  	<li ng-repeat="link in links">
+  		<a href="{{link.url}}">{{link.name}}</a>
+  	</li>
+  </ul>
+  <ul style="position:fixed; top:{{highScoresPosition}}px">
+  	<li ng-repeat="highScore in highScores">
+	  <span>{{highScore.name}}</span> - <span>{{highScore.score}}</span>
+	</li>
+  </ul>
+</div>

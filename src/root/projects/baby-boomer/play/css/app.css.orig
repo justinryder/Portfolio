@@ -1,0 +1,75 @@
+/* app css stylesheet */
+
+/*  MENU  */
+
+.menu {
+  font-family: Arial;
+  font-size: 3.0em;
+  background: #abf;
+  list-style: none;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  margin-bottom:2em;
+}
+
+.menu > h1 {
+  font-family: Arial;
+  font-size: 1.5em;
+  background: #bcd;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+}
+
+.menu > ul {
+  list-style: none;
+  font-family: Arial;
+  font-size: 1.5em;
+  background: #bcd;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  margin: 0;
+}
+
+.menu > li{
+  padding: 0;
+  margin: 0;
+}
+
+/* GAME */
+
+.game {
+  float: left;
+  width: 800px;
+  height: 800px;
+  cursor: none;
+}
+
+.aisle {
+  width: 12.5%;
+  height: 100%;
+}
+
+.aisle#left {
+  float: left;
+}
+
+.aisle#right {
+  float: right;
+}
+
+.gamePlayArea {
+  float: left;
+  width: 75%;
+  height: 100%;
+  background-repeat: repeat;
+}
+
+.obstacle{
+  position: fixed;
+<<<<<<< HEAD
+}
+=======
+  border: 2px solid black;
+}
+>>>>>>> 452343479a1b3073a5b3e3abfa194d3bacda14b7

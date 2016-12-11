@@ -173,11 +173,12 @@ a {
     margin: 0 0.5em; }
 
 .hero {
-  max-width: 100%;
+  width: 100%;
   padding: 2em;
-  background: center url("/img/Armadyne_Level_01.png");
-  background-size: cover;
+  background-color: #CCCCCC;
   color: #FFFFFF; }
+  .hero--armadyne {
+    background: center url("/img/Armadyne_Level_01.png"); }
   .hero_heading, .hero_content {
     max-width: 60rem; }
   .hero_heading {
@@ -187,4 +188,4 @@ a {
     font-size: 1rem; }
   .hero_image {
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 30rem; }

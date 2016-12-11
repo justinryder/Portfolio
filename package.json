@@ -6,6 +6,7 @@
   "repository": "https://github.com/justinryder/Portfolio.git",
   "author": "Justin Ryder",
   "devDependencies": {
+    "del": "^2.2.2",
     "express": "^4.13.4",
     "fs": "0.0.2",
     "gulp": "^3.9.1",
@@ -21,6 +22,7 @@
     "build:handlebars": "gulp build:handlebars",
     "build:html": "gulp build:html",
     "build:js": "gulp build:js",
+    "clean": "gulp clean",
     "watch": "gulp watch",
     "watch:css": "gulp watch:css",
     "watch:handlebars": "gulp watch:handlebars",

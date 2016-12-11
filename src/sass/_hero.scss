@@ -1,10 +1,13 @@
 .hero {
-  max-width: 100%;
+  width: 100%;
   padding: $largeSpacing;
 
-  background: $hero_background;
-  background-size: cover;
+  background-color: $hero_backgroundColor;
   color: $hero_color;
+
+  &--armadyne {
+    background: center url('/img/Armadyne_Level_01.png');
+  }
 
   &_heading,
   &_content {
@@ -22,6 +25,6 @@
 
   &_image {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 30rem;
   }
 }

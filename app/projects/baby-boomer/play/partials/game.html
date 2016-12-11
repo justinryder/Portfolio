@@ -1,0 +1,17 @@
+<div class="game" ng-mousemove="babyPosition.x = moveBaby($event)" ng-click="fireBottle()">
+  <div class="score">Score: {{score}}    Bottles: {{numBottles}}</div>
+	<div class="aisle" id="left" ng-style="aisleStyle()"></div>
+  <div class="obstacle" ng-repeat="obstacle in obstacles" style="left: {{obstacle.position.x}}px; top: {{obstacle.position.y}}px" ng-class="{colliding: obstacle.colliding}">
+    <img ng-src="{{obstacle.image}}" ng-width="{{obstacle.size.width}}" ng-height="{{obstacle.size.height}}" />
+  </div>
+  <div class="obstacle" ng-repeat="powerup in powerups" style="left: {{powerup.position.x}}px; top: {{powerup.position.y}}px" ng-class="{colliding: powerup.colliding}">
+    <img ng-src="{{powerup.image}}" ng-width="{{powerup.size.width}}" ng-height="{{powerup.size.height}}" />
+  </div>
+  <div class="bottle" ng-repeat="bottle in bottles" ng-style="bottle.style()">
+    <img ng-src="{{bottleImage}}" />
+  </div>
+	<div class="gamePlayArea" ng-style="backgroundStyle()">
+		<img ng-src="{{babyImage}}" ng-style="babyStyle()">
+	</div>
+	<div class="aisle" id="right" ng-style="backgroundStyle()"></div>
+</div>

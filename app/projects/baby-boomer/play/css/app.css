@@ -1,0 +1,165 @@
+/* app css stylesheet */
+html {
+  background-color: black;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+
+/* ANIMATION */
+.animate-enter, 
+.animate-leave
+{ 
+    -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.animate-enter.animate-enter-active, 
+.animate-leave {
+    opacity: 1;
+    right: 0;
+    height: 30px;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+    opacity: 0;
+    right: -50px;
+    height: 0px;
+}
+
+
+/*  MENU  */
+
+.menu {
+  font-family: Arial;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  background-color:black;
+}
+
+.menu h1 {
+  font-size: 5em;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  margin: 1em 0;
+  text-align: center;
+  padding: 0.5em;
+  background-color:black;
+}
+
+.menu ul {
+  text-align: center;
+  list-style: none;
+  font-size: 3em;
+  width:100%;
+  background-color:black;
+}
+
+.menu li {
+  display: inline-block;
+  margin: auto;
+  width: 70%;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  padding: 0.5em;
+  background-color:black;
+}
+
+/* GAME */  
+
+.game {
+  float: left;
+  width: 840px;
+  height: 800px;
+  cursor: none;
+}
+
+.score{
+  background: #bcd;
+  font-size: 2em;
+  color: #fff;
+  z-index: 1;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.aisle {
+  width: 10%;
+  height: 100%;
+}
+
+.aisle#left {
+  float: left;
+  background-image: url(../img/ShelfLeft.png);
+  background-repeat: repeat-y;
+}
+
+.aisle#right {
+  float: right;
+  background: url(../img/ShelfRight.png) repeat;
+}
+
+.gamePlayArea {
+  float: left;
+  width: 80%;
+  height: 100%;
+  background: url(../img/background.png) repeat;
+}
+
+.obstacle, .bottle {
+  position: fixed;
+  z-index: 0;
+}
+
+.colliding {
+  border: 2px red solid;
+}
+
+/* HIGH SCORES */
+.high-scores {
+	background-color:black;
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+}
+
+.high-scores h1 {
+  font-size: 5em;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+  margin: 1em 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.high-scores ul {
+  text-align: center;
+  list-style: none;
+  font-size: 3em;
+  z-index: -1;
+  width:100%;
+}
+
+.high-scores li {
+  display: inline-block;
+  margin: auto;
+  width: 70%;
+  border-top: 0.1em solid black;
+  border-bottom: 0.1em solid black;
+}
+
