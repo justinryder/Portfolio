@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   {{> head}}
-	<body>
+	<body class="page">
 		{{> header}}
 		<article class="pageContent">
       <h2 class="pageContent_header">{{title}}</h2>
@@ -13,14 +13,6 @@
   			{{> pageSection}}
       {{/each}}
 		</article>
-		<aside class="pageContent pageContent-secondary">
-      {{#if skills}}
-  			{{> skills}}
-      {{/if}}
-      {{#if credits}}
-  			{{> credits}}
-      {{/if}}
-		</aside>
 		{{> footer}}
 	</body>
 </html>

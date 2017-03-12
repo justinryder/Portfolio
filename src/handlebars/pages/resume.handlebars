@@ -1,12 +1,10 @@
 <!doctype html>
 <html>
 	{{> head title="Justin Ryder - Resume"}}
-	<body>
+	<body class="page">
 		{{> header}}
-		<article role="main" class="resume">
-			<div class="hero">
-				<h2 class="hero_heading">Resume</h2>
-			</div>
+		<article role="main" class="resume pageContent">
+			<h2 class="pageContent_header">Resume</h2>
 			{{#each jobs}}
 				<section class="pageSection resume_job">
 					<h4 class="pageSection_header">{{jobTitle}}</h4>

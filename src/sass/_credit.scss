@@ -1,0 +1,10 @@
+.credit {
+  &_name {
+    font-weight: bold;
+  }
+
+  &_role:before {
+    content: '-';
+    margin-right: 0.25em;
+  }
+}

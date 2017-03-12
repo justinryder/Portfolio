@@ -6,12 +6,11 @@
 
 html {
   font-family: $page_font;
-  color: $page_color;
 }
 
-@import 'grid';
 @import 'links';
 @import 'bulletedList';
 @import 'page/page';
 @import 'mainNavLinks';
 @import 'hero';
+@import 'credit';

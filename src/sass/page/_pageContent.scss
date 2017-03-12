@@ -1,23 +1,19 @@
 .pageContent {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  padding: $smallSpacing $largeSpacing;
 
-  &-primary {
-
-  }
-
-  &-secondary {
-
+  @include breakpoint(small, down) {
+    padding: $smallSpacing / 2 $largeSpacing / 2;
   }
 
   &_header {
+    display: inline-block;
     font-weight: $pageContent_header_fontWeight;
     font-size: $pageContent_header_fontSize;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 
     & + &:before {
       content: '-';
-      display: inline-block;
       margin: 0 0.25em;
     }
 
@@ -29,5 +25,10 @@
 
   &_section {
 
+  }
+
+  &_youtube {
+    max-width: 100%;
+    margin-top: 1em;
   }
 }

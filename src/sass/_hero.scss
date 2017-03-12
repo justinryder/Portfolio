@@ -1,11 +1,14 @@
 .hero {
-  width: 100%;
-  padding: $largeSpacing;
+  max-width: 100%;
 
   background-color: $hero_backgroundColor;
   color: $hero_color;
 
-  &--armadyne {
+  &-home {
+    padding: $largeSpacing;
+  }
+
+  &-armadyne {
     background: center url('/img/Armadyne_Level_01.png');
   }
 

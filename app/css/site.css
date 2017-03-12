@@ -86,6 +86,11 @@ hr {
 input, select {
   vertical-align: middle; }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
 html {
   font-size: 1em; }
 
@@ -93,11 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem; }
 
 html {
-  font-family: "Open Sans Condensed", sans-serif;
-  color: #333333; }
-
-.grid {
-  display: flex; }
+  font-family: "Open Sans Condensed", sans-serif; }
 
 a {
   color: #91AB1C;
@@ -112,17 +113,17 @@ a {
   padding: 1em 1em 0 2em;
   line-height: 1.5rem; }
 
+.page {
+  background-color: #CCCCCC;
+  color: #333333; }
+
 .pageSection {
-  padding: 1em 2em;
   background-color: #CCCCCC; }
-  @media (max-width: 30em) {
-    .pageSection {
-      padding: 0.5em 1em; } }
   .pageSection_header {
     display: inline-block;
     font-size: 1.375rem;
     font-weight: bold;
-    margin: 0 0 1em; }
+    margin-top: 1em; }
     .pageSection_header + .pageSection_header:before {
       content: '-';
       margin: 0 0.25em; }
@@ -131,6 +132,10 @@ a {
       font-weight: normal; }
     .pageSection_header img {
       vertical-align: middle; }
+  @media (min-width: 50em) {
+    .pageSection-small {
+      display: inline-block;
+      width: 32%; } }
 
 .pageHeader {
   display: flex;
@@ -145,19 +150,25 @@ a {
     font-size: 1.375rem; }
 
 .pageContent {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline; }
+  padding: 1em 2em; }
+  @media (max-width: 30em) {
+    .pageContent {
+      padding: 0.5em 1em; } }
   .pageContent_header {
+    display: inline-block;
     font-weight: bold;
-    font-size: 1.625rem; }
+    font-size: 1.625rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
     .pageContent_header + .pageContent_header:before {
       content: '-';
-      display: inline-block;
       margin: 0 0.25em; }
     .pageContent_header-sub {
       font-weight: normal;
       font-size: 1.25rem; }
+  .pageContent_youtube {
+    max-width: 100%;
+    margin-top: 1em; }
 
 .pageFooter {
   background-color: #333333;
@@ -173,11 +184,12 @@ a {
     margin: 0 0.5em; }
 
 .hero {
-  width: 100%;
-  padding: 2em;
+  max-width: 100%;
   background-color: #CCCCCC;
   color: #FFFFFF; }
-  .hero--armadyne {
+  .hero-home {
+    padding: 2em; }
+  .hero-armadyne {
     background: center url("/img/Armadyne_Level_01.png"); }
   .hero_heading, .hero_content {
     max-width: 60rem; }
@@ -189,3 +201,10 @@ a {
   .hero_image {
     max-width: 100%;
     max-height: 30rem; }
+
+.credit_name {
+  font-weight: bold; }
+
+.credit_role:before {
+  content: '-';
+  margin-right: 0.25em; }

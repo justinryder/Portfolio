@@ -6,8 +6,8 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/site.css">
 </head>
-	<body>
-		<header class="pageHeader pageSection">
+	<body class="page">
+		<header class="pageHeader pageContent">
   <h1 class="pageHeader_heading">Justin Ryder</h1>
   <nav class="pageHeader_nav">
     <ul class="mainNavLinks">
@@ -32,90 +32,54 @@
 </section>
   			<section class="pageContent_section pageSection">
   <h3 class="pageSection_header">About this Project</h3>
-      <p>Play as an Armadyne, an armadillo/porcupine hybris, and race to victory! Use your hardened shell to race at insane speeds, then use your spikes to scale walls! Collect power-ups to disadvantage your opponents and win!</p>
+      <p class="text">Play as an Armadyne, an armadillo/porcupine hybrid, and race to victory! Use your hardened shell to race at insane speeds, then use your spikes to scale walls! Collect power-ups to disadvantage your opponents and win!</p>
+    <iframe
+  class="pageContent_youtube"
+    width="560"
+    height="315"
+  src="https://www.youtube.com/embed/tULc7A4mjE8"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
     <ul class="bulletedList">
     <li class="bulletedList_item">
-      What I did for this project
+      Implemented networking code with support for up to 16 players
     </li>
     <li class="bulletedList_item">
-      Another thing I did for this project
+      Built in-game HUD and the 3D main menu UI
     </li>
     <li class="bulletedList_item">
-      I was in charge of doing this thing as well
+      Various in-game mechanics such as the wall climbing system and misc powerups
     </li>
 </ul>
 </section>
   			<section class="pageContent_section pageSection">
-  <h3 class="pageSection_header">Another Section</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dui risus, pellentesque sed sollicitudin placerat, vehicula at nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc mattis maximus nisl eget pulvinar. Maecenas velit ex, pretium sed vulputate at, euismod egestas orci. Maecenas urna orci, molestie et mi vitae, ultrices imperdiet urna. Quisque feugiat nisl purus, quis finibus nulla vulputate ut. Nunc nunc turpis, viverra quis consectetur at, accumsan vitae orci. Nulla ultricies pellentesque ultricies.</p>
-    <pre>
-.hero {
-  max-width: 100%;
-  padding-top: $largeSpacing;
-  padding-bottom: $largeSpacing;
-
-  background: $hero_background;
-  background-size: cover;
-  color: $hero_color;
-
-  &amp;_heading,
-  &amp;_content {
-    max-width: 400px;
-  }
-
-  &amp;_heading {
-    margin-bottom: $smallSpacing / 2;
-  }
-
-  &amp;_image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-}
-
-</pre>
-    <aside class="pageContent_aside">
-  <h3>Content Callout</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dui risus, pellentesque sed sollicitudin placerat, vehicula at nisi.</p>
-</aside>
+  <h3 class="pageSection_header">Credits</h3>
+      <ul class="bulletedList">
+    <li class="credit">
+        <a class="credit_name" href="//lucasbilodeau.squarespace.com">Lucas Bilodeau</a>
+      <span class="credit_role">Producer / Lead Designer</span>
+    </li>
+    <li class="credit">
+        <a class="credit_name" href="//www.justin-ryder.com">Justin Ryder</a>
+      <span class="credit_role">Programmer</span>
+    </li>
+    <li class="credit">
+        <span class="credit_name">Mason Fiore</span>
+      <span class="credit_role">Programmer</span>
+    </li>
+    <li class="credit">
+        <span class="credit_name">Eric Kilbride</span>
+      <span class="credit_role">Designer</span>
+    </li>
+    <li class="credit">
+        <span class="credit_name">Erikson Pashke</span>
+      <span class="credit_role">Artist</span>
+    </li>
+</ul>
 </section>
 		</article>
-		<aside class="pageContent pageContent-secondary">
-  			<section>
-  <h3>Skills</h3>
-  <ul>
-      <li>A skill I used on this project</li>
-      <li>Another skill</li>
-      <li>And a few more</li>
-  </ul>
-</section>
-  			<section>
-  <h3>Credits</h3>
-  <ul>
-      <li class="credit">
-          <a href="//lucasbilodeau.squarespace.com">Lucas Bilodeau</a>
-        <span class="credit_role">Producer / Lead Designer</span>
-      </li>
-      <li class="credit">
-          <a href="//www.justin-ryder.com">Justin Ryder</a>
-        <span class="credit_role">Programmer</span>
-      </li>
-      <li class="credit">
-          <span class="credit_name">Mason Fiore</span>
-        <span class="credit_role">Programmer</span>
-      </li>
-      <li class="credit">
-          <span class="credit_name">Eric Kilbride</span>
-        <span class="credit_role">Designer</span>
-      </li>
-      <li class="credit">
-          <span class="credit_name">Erikson Pashke</span>
-        <span class="credit_role">Artist</span>
-      </li>
-  </ul>
-</section>
-		</aside>
-		<footer class="pageFooter pageSection">
+		<footer class="pageFooter pageContent">
   This site was built by Justin Ryder. <a href="//github.com/justinryder/Portfolio">You can find the source code here.</a>
 </footer>
 	</body>

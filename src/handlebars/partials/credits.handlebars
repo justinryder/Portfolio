@@ -1,15 +1,12 @@
-<section>
-  <h3>Credits</h3>
-  <ul>
-    {{#each credits}}
-      <li class="credit">
-        {{#if url}}
-          <a href="{{url}}">{{name}}</a>
-        {{else}}
-          <span class="credit_name">{{name}}</span>
-        {{/if}}
-        <span class="credit_role">{{role}}</span>
-      </li>
-    {{/each}}
-  </ul>
-</section>
+<ul class="bulletedList">
+  {{#each this}}
+    <li class="credit">
+      {{#if url}}
+        <a class="credit_name" href="{{url}}">{{name}}</a>
+      {{else}}
+        <span class="credit_name">{{name}}</span>
+      {{/if}}
+      <span class="credit_role">{{role}}</span>
+    </li>
+  {{/each}}
+</ul>
