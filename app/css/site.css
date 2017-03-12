@@ -162,7 +162,7 @@ a {
 
 .pageContent {
   flex-grow: 1;
-  max-width: 50em;
+  max-width: 80em;
   align-self: center;
   padding: 1em 2em; }
   @media (max-width: 30em) {
