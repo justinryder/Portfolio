@@ -21,6 +21,10 @@
       font-weight: $pageContent_header-sub_fontWeight;
       font-size: $pageContent_header-sub_fontSize;
     }
+
+    &-full {
+      display: block;
+    }
   }
 
   &_section {

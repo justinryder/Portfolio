@@ -1,6 +1,14 @@
 .pageSection {
   background-color: $pageSection_backgroundColor;
 
+  &-small {
+    @include breakpoint(medium, up) {
+      display: inline-block;
+      vertical-align: top;
+      width: 32%;
+    }
+  }
+
   &_header {
     display: inline-block;
     font-size: $pageSection_header_fontSize;
@@ -22,10 +30,7 @@
     }
   }
 
-  &-small {
-    @include breakpoint(medium, up) {
-      display: inline-block;
-      width: 32%;
-    }
+  &_text {
+    margin-top: 0.5em;
   }
 }

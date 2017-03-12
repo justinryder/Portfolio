@@ -12,12 +12,15 @@
     background: center url('/img/Armadyne_Level_01.png');
   }
 
-  &_heading,
+  &_header,
   &_content {
-    max-width: 60rem;
+    display: block;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0.25em;
   }
 
-  &_heading {
+  &_header {
     margin-bottom: $smallSpacing / 2;
     font-size: $hero_heading_fontSize;
   }

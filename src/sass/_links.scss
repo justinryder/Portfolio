@@ -1,5 +1,6 @@
 a {
   color: $link_color;
+  font-weight: $link_fontWeight;
   text-decoration: none;
 
   &:hover {
