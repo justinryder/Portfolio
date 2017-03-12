@@ -1,6 +1,10 @@
 .page {
   background-color: $page_backgroundColor;
   color: $page_color;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 @import 'pageSection';

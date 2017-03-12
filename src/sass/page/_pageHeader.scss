@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1em;
+  padding: $smallSpacing $largeSpacing;
 
   background-color: $pageHeader_backgroundColor;
   color: $pageHeader_color;

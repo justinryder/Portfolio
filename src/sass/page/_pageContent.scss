@@ -1,4 +1,7 @@
 .pageContent {
+  flex-grow: 1;
+  max-width: 50em;
+  align-self: center;
   padding: $smallSpacing $largeSpacing;
 
   @include breakpoint(small, down) {

@@ -10,19 +10,25 @@
   }
 
   &_header {
-    display: inline-block;
+    display: block;
     font-size: $pageSection_header_fontSize;
     font-weight: $pageSection_header_fontWeight;
     margin-top: 1em;
 
-    & + &:before {
-      content: '-';
-      margin: 0 0.25em;
-    }
-
     &-sub {
       font-size: $pageSection_header-sub_fontSize;
       font-weight: $pageSection_header-sub_fontWeight;
+    }
+
+    .resume_job & {
+      @include breakpoint(medium, up) {
+        display: inline-block;
+
+        &-sub {
+          text-align: right;
+          float: right;
+        }
+      }
     }
 
     img {
