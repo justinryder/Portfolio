@@ -207,7 +207,9 @@ a {
   .hero-home {
     padding: 2em; }
   .hero-armadyne {
-    background: center url("/img/Armadyne_Level_01.png"); }
+    background-image: url("/img/Armadyne_Level_01.png");
+    background-position: center;
+    background-size: cover; }
   .hero_header, .hero_content {
     display: block;
     max-width: 20rem;
