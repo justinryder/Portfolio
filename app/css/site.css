@@ -128,7 +128,8 @@ a {
     .pageSection-small {
       display: inline-block;
       vertical-align: top;
-      width: 32%; } }
+      width: 32%;
+      padding: 0.5em; } }
   .pageSection_header {
     display: block;
     font-size: 1.375rem;
