@@ -5,7 +5,7 @@
   color: $hero_color;
 
   &-home {
-    padding: $largeSpacing;
+    padding: 2em;
   }
 
   &-armadyne {
@@ -23,7 +23,7 @@
   }
 
   &_header {
-    margin-bottom: $smallSpacing / 2;
+    margin-bottom: 0.5em;
     font-size: $hero_heading_fontSize;
   }
 

@@ -2,10 +2,10 @@
   flex-grow: 1;
   max-width: 80em;
   align-self: center;
-  padding: $smallSpacing $largeSpacing;
+  padding: 1em 2em;
 
   @include breakpoint(small, down) {
-    padding: $smallSpacing / 2 $largeSpacing / 2;
+    padding: 0.5em 1em;
   }
 
   &_header {
