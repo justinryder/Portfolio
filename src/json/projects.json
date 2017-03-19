@@ -14,6 +14,11 @@
       "name": "Omni-Shelf",
       "url": "//youtu.be/ly6n3BWXvtQ",
       "description": "What if you could go grocery shopping without leaving the comfort of your own home? In this 2 day hackathon, my team explored ways to build a VR shopping experience that brings the store shelves to your VR world. While we're in VR, we might as well shop in the forest or on a mountain or in Skyrim."
+    },
+    {
+      "name": "Physics Engine",
+      "url": "/projects/physics-engine.html",
+      "description": "I built a physics engine with C++ and DirectX and uploaded some of the more ridiculous demos to YouTube. Like when I used it to build a Newton's cradle, an overly interconnected cube of springs, or even the Solar System."
     }
   ]
 }

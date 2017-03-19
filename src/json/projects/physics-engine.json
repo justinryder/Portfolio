@@ -1,0 +1,88 @@
+{
+	"title": "Physics Engine",
+	"type": "academic",
+	"technologies": [
+		{
+      "name": "DirectX"
+    },
+		{
+      "name": "C++"
+    }
+	],
+	"semester": {
+		"classYear": "Senior",
+		"season": "Spring",
+		"year": "2013"
+	},
+	"class": {
+		"courseNumber": "EGP 425",
+		"courseName": "Game Physics"
+	},
+	"downloads": [
+	],
+  "hero": {
+  },
+  "pageSections": [
+    {
+      "heading": "About this Project",
+      "contents": [
+        {
+          "text": "I built a physics engine using DirectX, C++, and some elbow grease."
+        },
+        {
+          "text": "Prior to this project, I only had OpenGL experience so I decided to learn DirectX as I went along for an extra challenge."
+        },
+        {
+          "subheading": "Newton's Cradle - Cables and Collision Demo"
+        },
+				{
+					"youtube":
+					{
+						"src": "https://www.youtube.com/embed/DQAF9jrjH60"
+					}
+				},
+        {
+          "subheading": "Solar System - Gravity Demo"
+        },
+        {
+          "youtube":
+          {
+            "src": "https://www.youtube.com/embed/is8njrJ84hY"
+          }
+        },
+        {
+          "subheading": "Rolling Dodecahedron - Rods Demo"
+        },
+				{
+					"youtube":
+					{
+						"src": "https://www.youtube.com/embed/ldgHp9fjCKo"
+					}
+				},
+        {
+          "subheading": "Springs Demo"
+        },
+        {
+          "youtube":
+          {
+            "src": "https://www.youtube.com/embed/CSh6-bKHfo4"
+          }
+        }
+			]
+		},
+		{
+			"heading": "Credits",
+			"contents": [
+				{
+					"credits": [
+						{
+							"name": "Justin Ryder",
+							"role": "Programmer",
+							"url": "//www.justin-ryder.com"
+						}
+					]
+				}
+      ]
+    }
+  ]
+}
