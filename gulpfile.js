@@ -62,13 +62,19 @@ function generateHandlebarsPipe(options) {
         template = handlebars.compile(templateFile.contents.toString(), {
           preventIndent: true
         }),
-        dest = 'app'
+        dest = 'app',
+        jsonSrc = 'src/json'
 
     if (options.pageFolder) {
       dest += '/' + templateName
+      jsonSrc += '/' + templateName + '/*.json'
+    } else {
+      jsonSrc += '/' + templateName + '.json'
     }
 
-    gulp.src('src/json/' + templateName + '/*.json')
+    console.log(templateName, dest, jsonSrc)
+
+    gulp.src(jsonSrc)
     .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
       var newFile = dataFile.clone()
 
