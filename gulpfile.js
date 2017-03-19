@@ -54,17 +54,17 @@ gulp.task('register:partials', function() {
     }))
 })
 
-function buildHandlebars() {
-  return gulp.src('src/handlebars/pages/*.handlebars')
-  .pipe(through.obj(function(templateFile, templateEncoding, templateCallback) {
+// TODO: Once this implementation is settled move it to a separate package
+// TODO: Add default options
+function generateHandlebarsPipe(options) {
+  return through.obj(function(templateFile, templateEncoding, templateCallback) {
     var templateName = templateFile.relative.split('.')[0],
         template = handlebars.compile(templateFile.contents.toString(), {
           preventIndent: true
         }),
         dest = 'app'
 
-    // TODO: Make a configurable way to do this
-    if (templateName != 'index' && templateName != 'resume' && templateName != '404') {
+    if (options.pageFolder) {
       dest += '/' + templateName
     }
 
@@ -100,7 +100,19 @@ function buildHandlebars() {
     .pipe(gulp.dest(dest))
 
     templateCallback()
-  }))
+  })
+}
+
+function buildHandlebars() {
+  return mergeStream(
+    gulp.src('src/handlebars/pages/*.handlebars')
+      .pipe(generateHandlebarsPipe({
+        pageFolder: false
+      })),
+    gulp.src('src/handlebars/pageFolders/*.handlebars')
+      .pipe(generateHandlebarsPipe({
+        pageFolder: true
+      })))
 }
 
 gulp.task('build:handlebars', ['register:partials'], buildHandlebars)
