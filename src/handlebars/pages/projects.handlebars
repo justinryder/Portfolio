@@ -6,16 +6,18 @@
 		<article role="main" class="pageContent">
 			<section class="pageSection">
 				<h2 class="pageSection_header">Projects</h2>
-				<section class="pageSection pageSection-small">
-					<h2 class="pageSection_header">
-						<a href="/projects/baby-boomer.html">
-							Baby Boomer
-						</a>
-					</h2>
-					<p class="pageSection_text">
-						Can AngularJS be used to create an infinite scroller? Yes. Should it? No. But I did it anyways! <a href="/projects/baby-boomer/play">Play as a lost baby navigating the infinite aisles of a grocery store, dodging tipped carts and more.</a>
-					</p>
-				</section>
+        {{#each projects}}
+  				<section class="pageSection pageSection-small">
+  					<h2 class="pageSection_header">
+  						<a href="{{url}}">
+  							{{name}}
+  						</a>
+  					</h2>
+  					<p class="pageSection_text">
+  						{{description}}
+  					</p>
+  				</section>
+        {{/each}}
 			</section>
 		</article>
 		{{> footer}}

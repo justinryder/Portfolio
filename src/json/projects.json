@@ -1,3 +1,19 @@
 {
-  
+  "projects": [
+    {
+      "name": "Baby Boomer",
+      "url": "/projects/baby-boomer.html",
+      "description": "Can AngularJS be used to create an infinite scroller? Yes. Should it? No. But I did it anyways! Play as a lost baby navigating the infinite aisles of a grocery store, dodging tipped carts and more."
+    },
+    {
+      "name": "Armyadyne",
+      "url": "/projects/armadyne.html",
+      "description": "Play as an Armadyne, an armadillo/porcupine hybrid, and race to victory! Use your hardened shell to race at insane speeds, then use your spikes to scale walls! Collect power-ups to disadvantage your opponents and win!"
+    },
+    {
+      "name": "Omni-Shelf",
+      "url": "//youtu.be/ly6n3BWXvtQ",
+      "description": "What if you could go grocery shopping without leaving the comfort of your own home? In this 2 day hackathon, my team explored ways to build a VR shopping experience that brings the store shelves to your VR world. While we're in VR, we might as well shop in the forest or on a mountain or in Skyrim."
+    }
+  ]
 }
