@@ -72,8 +72,6 @@ function generateHandlebarsPipe(options) {
       jsonSrc += '/' + templateName + '.json'
     }
 
-    console.log(templateName, dest, jsonSrc)
-
     gulp.src(jsonSrc)
     .pipe(through.obj(function(dataFile, dataEncoding, dataCallback) {
       var newFile = dataFile.clone()
