@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "name": "CodePen Experiments",
+      "url": "//codepen.io/justinryder",
+      "description": "I use CodePen to experiment with new web tech and to create reduced test cases. All of my pens are publically available."
+    },
+    {
+      "name": "GitHub Projects",
+      "url": "//github.com/justinryder",
+      "description": "Whenever possible, I host all of my projects publically on GitHub. I love coding in hackathons so there is no shortage of hastily built, but super fun projects there."
+    },
+    {
       "name": "Baby Boomer",
       "url": "/projects/baby-boomer.html",
       "description": "Can AngularJS be used to create an infinite scroller? Yes. Should it? No. But I did it anyways! Play as a lost baby navigating the infinite aisles of a grocery store, dodging tipped carts and more."
