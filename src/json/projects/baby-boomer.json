@@ -7,6 +7,11 @@
     }
   ],
 	"downloads": [
+		{
+			"type": "web",
+			"url": "/projects/baby-boomer/play",
+			"label": "Play Baby Boomer"
+		}
 	],
   "hero": {
     "img": {

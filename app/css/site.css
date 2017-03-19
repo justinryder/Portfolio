@@ -183,6 +183,8 @@ a {
       font-size: 1.25rem; }
     .pageContent_header-full {
       display: block; }
+  .pageContent_row {
+    display: block; }
   .pageContent_youtube {
     max-width: 100%;
     margin-top: 1em; }

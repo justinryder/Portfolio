@@ -6,7 +6,10 @@
 		<article class="pageContent">
       <h2 class="pageContent_header">{{title}}</h2>
       {{#each technologies}}
-      <h3 class="pageContent_header pageContent_header-sub">{{name}}</h3>
+        <h3 class="pageContent_header pageContent_header-sub">{{name}}</h3>
+      {{/each}}
+      {{#each downloads}}
+        <a class="pageContent_row" href="{{url}}">{{label}}</a>
       {{/each}}
       {{> hero hero}}
       {{#each pageSections}}

@@ -20,9 +20,9 @@
 	},
 	"downloads": [
 		{
-			"os": "Windows",
-			"price": "Free",
-			"url": "https://dl.dropbox.com/u/3239049/Armadyne%20Release/Armadyne.zip"
+			"type": "Windows",
+			"url": "https://www.dropbox.com/s/t4mygfzgh2zaxpj/Armadyne.zip?dl=0",
+			"label": "Play Armadyne"
 		}
 	],
   "hero": {
