@@ -23,6 +23,8 @@
     "build:html": "gulp build:html",
     "build:js": "gulp build:js",
     "clean": "gulp clean",
+    "serve": "PORT=3000 forever start server.js",
+    "stop": "forever stop server.js",
     "watch": "gulp watch",
     "watch:css": "gulp watch:css",
     "watch:handlebars": "gulp watch:handlebars",
@@ -30,6 +32,7 @@
     "watch:js": "gulp watch:js"
   },
   "dependencies": {
+    "forever": "^0.15.3",
     "path": "^0.12.7",
     "syntaxhighlighter": "^4.0.1"
   }

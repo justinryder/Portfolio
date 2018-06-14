@@ -7,7 +7,7 @@ app.use(express.static(appDirectory))
 console.log('server using static ' + appDirectory)
 
 app.use(function(req, res, next) {
-  res.status(404).sendFile(path.join(appDirectory, '404.html'))
+  res.status(404).sendFile(path.join(appDirectory, 'index.html'))
 })
 
 var port = 80
