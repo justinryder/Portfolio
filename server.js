@@ -10,6 +10,6 @@ app.use(function(req, res, next) {
   res.status(404).sendFile(path.join(appDirectory, 'index.html'))
 })
 
-var port = 80
+var port = process.env.PORT || 80;
 app.listen(port)
 console.log('server listening on port ' + port)
