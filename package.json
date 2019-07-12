@@ -14,7 +14,7 @@
     "handlebars": "^4.0.5",
     "merge-stream": "^1.0.0",
     "through2": "^2.0.1",
-    "vinyl": "^1.1.1"
+    "vinyl": "^2.2.0"
   },
   "scripts": {
     "build": "gulp build",
