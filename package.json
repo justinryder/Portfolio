@@ -9,7 +9,7 @@
     "del": "^2.2.2",
     "express": "^4.17.1",
     "fs": "0.0.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-sass": "^2.2.0",
     "handlebars": "^4.0.5",
     "merge-stream": "^2.0.0",
