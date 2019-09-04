@@ -11,7 +11,7 @@
     "fs": "0.0.2",
     "gulp": "^4.0.2",
     "gulp-sass": "^2.2.0",
-    "handlebars": "^4.0.5",
+    "handlebars": "^4.2.0",
     "merge-stream": "^2.0.0",
     "through2": "^2.0.1",
     "vinyl": "^2.2.0"
