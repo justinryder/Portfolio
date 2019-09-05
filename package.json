@@ -10,7 +10,7 @@
     "express": "^4.17.1",
     "fs": "0.0.2",
     "gulp": "^4.0.2",
-    "gulp-sass": "^2.2.0",
+    "gulp-sass": "^4.0.2",
     "handlebars": "^4.2.0",
     "merge-stream": "^2.0.0",
     "through2": "^2.0.1",
