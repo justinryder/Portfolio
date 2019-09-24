@@ -13,7 +13,7 @@
     "gulp-sass": "^4.0.2",
     "handlebars": "^4.3.0",
     "merge-stream": "^2.0.0",
-    "through2": "^2.0.1",
+    "through2": "^3.0.1",
     "vinyl": "^2.2.0"
   },
   "scripts": {
