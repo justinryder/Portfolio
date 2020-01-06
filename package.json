@@ -32,7 +32,7 @@
     "watch:js": "gulp watch:js"
   },
   "dependencies": {
-    "forever": "^0.15.3",
+    "forever": "^2.0.0",
     "path": "^0.12.7",
     "syntaxhighlighter": "^4.0.1"
   }
