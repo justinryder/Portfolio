@@ -1,9 +1,68 @@
 {
   "jobs": [
+	{
+	  "employer": {
+		  "name": "Carvana",
+		  "website": "https://www.carvana.com/",
+		  "img": {
+			  "src": "/img/Carvana-logo.svg",
+			  "alt": "Carvana Logo",
+			  "width": "auto",
+			  "height": "2em"
+		  }
+	  },
+	  "jobTitle": "Senior Front End Engineer II",
+	  "startDate": "August 2020",
+	  "endDate": "Present",
+	  "responsibilities": [
+		  "Building an internal UI platform to accelerate development of internal apps"
+	  ]
+	},
+	{
+	  "employer": {
+		  "name": "Fandom",
+		  "website": "https://www.fandom.com/",
+		  "img": {
+			  "src": "/img/Fandom-logo.svg",
+			  "alt": "Fandom Logo",
+			  "width": "auto",
+			  "height": "2em"
+		  }
+	  },
+	  "jobTitle": "Senior Front End Engineer",
+	  "startDate": "January 2019",
+	  "endDate": "August 2020",
+	  "responsibilities": [
+		  "Front end developer for the D&D Beyond Encounter Builder and Combat Tracker with a focus on making them accessible from the get-go",
+		  "Improved front end build processes by automating feature flag configuration for easy client deploys that allow any team member to test in-progress branches in any environment",
+		  "Streamlined the process for requesting and implementing new marketing landing pages"
+	  ]
+	},
+	{
+	  "employer": {
+		  "name": "Curse",
+		  "website": "https://curse.com/",
+		  "img": {
+			  "src": "/img/Curse-logo.png",
+			  "alt": "Curse Logo",
+			  "width": "auto",
+			  "height": "3em"
+		  }
+	  },
+	  "jobTitle": "Front End Engineer",
+	  "startDate": "July 2017",
+	  "endDate": "January 2019",
+	  "responsibilities": [
+		  "Developed the UI for the D&D Beyond Twitch Extension that syncs with backend services to display live health and status updates during combat while scaling to any viewing resolution",
+		  "Built the UI for bombz.io, a 100 player IO game, using inline SVG to create fun animations",
+		  "Implemented the MTGSalvation deck builder, hand simulator, and front page widgets as my first professional React project",
+		  "Updated MMO Champion's legacy styles to be mobile responsive and support theming for newly launched sub-sites (Overwatch and Heroes of the Storm)"
+	  ]
+	},
   	{
   		"employer": {
   			"name": "MyWebGrocer",
-  			"website": "//www.mywebgrocer.com",
+  			"website": "https://www.mywebgrocer.com/",
         "img": {
           "src": "/img/MyWebGrocer-logo.svg",
           "alt": "MyWebGrocer Logo",
@@ -13,7 +72,7 @@
   		},
   		"jobTitle": "Software Engineer II",
   		"startDate": "June 2013",
-  		"endDate": "Present",
+  		"endDate": "July 2017",
   		"responsibilities": [
         "UI tech lead on the first customer implementation of a new Sitecore CMS shopping site",
         "Co-founded a cross-team alliance focused on learning, improving, and sharing UI/UX best practices",
@@ -23,7 +82,7 @@
   	{
   		"employer": {
   			"name": "MyWebGrocer",
-  			"website": "//www.mywebgrocer.com",
+  			"website": "https://www.mywebgrocer.com/",
         "img": {
           "src": "/img/MyWebGrocer-logo.svg",
           "alt": "MyWebGrocer Logo",
@@ -81,7 +140,7 @@
   	{
   		"employer": {
   			"name": "Champlain College",
-  			"website": "//champlain.edu",
+  			"website": "https://www.champlain.edu/",
   			"img": {
           "src": "/img/ChamplainCollege-logo.jpg",
           "alt": "Champlain College Logo",
@@ -100,7 +159,7 @@
   	{
   		"employer": {
   			"name": "Champlain College",
-  			"website": "//champlain.edu",
+  			"website": "https://www.champlain.edu/",
   			"img": {
           "src": "/img/ChamplainCollege-logo.jpg",
           "alt": "Champlain College Logo",
