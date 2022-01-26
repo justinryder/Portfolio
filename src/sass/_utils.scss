@@ -1,7 +1,9 @@
+@use "sass:math";
+
 @function removeUnit($value) {
-  @return $value / ($value * 0 + 1);
+  @return math.div($value, ($value * 0 + 1));
 }
 
 @function toRem($size) {
-  @return #{removeUnit($size) / 16}rem;
+  @return #{math.div(removeUnit($size), 16)}rem;
 }
