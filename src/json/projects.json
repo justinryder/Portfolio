@@ -2,13 +2,13 @@
   "projects": [
     {
       "name": "CodePen Experiments",
-      "url": "//codepen.io/justinryder",
-      "description": "I use CodePen to experiment with new web tech and to create reduced test cases. All of my pens are publically available."
+      "url": "https://codepen.io/justinryder",
+      "description": "I use CodePen to experiment with new web tech and to create reduced test cases. All of my pens are publicly available."
     },
     {
       "name": "GitHub Projects",
-      "url": "//github.com/justinryder",
-      "description": "Whenever possible, I host all of my projects publically on GitHub. I love coding in hackathons so there is no shortage of hastily built, but super fun projects there."
+      "url": "https://github.com/justinryder",
+      "description": "Whenever possible, I host all of my projects publicly on GitHub. I love coding in hackathons so there is no shortage of hastily built, but super fun projects there."
     },
     {
       "name": "Baby Boomer",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Omni-Shelf",
-      "url": "//youtu.be/ly6n3BWXvtQ",
+      "url": "https://youtu.be/ly6n3BWXvtQ",
       "description": "What if you could go grocery shopping without leaving the comfort of your own home? In this 2 day hackathon, my team explored ways to build a VR shopping experience that brings the store shelves to your VR world. While we're in VR, we might as well shop in the forest or on a mountain or in Skyrim."
     },
     {

@@ -1,4 +1,7 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 100%;
 
   background-color: $hero_backgroundColor;
@@ -16,7 +19,6 @@
 
   &_header,
   &_content {
-    display: block;
     max-width: 20rem;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 0.25em;
