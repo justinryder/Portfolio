@@ -12,6 +12,13 @@
       "name": "Twitch"
     }
   ],
+  "downloads": [
+    {
+      "type": "web",
+      "url": "https://dashboard.twitch.tv/extensions/p17vkz1192uj33tam553eej11sxv3x-1.0.21",
+      "label": "Install the Extension"
+    }
+  ],
   "hero": {
     "img": {
       "src": "/img/ddb-twitch-extension.png",

@@ -9,6 +9,18 @@
       "name": "Redux"
     }
   ],
+  "downloads": [
+    {
+      "type": "web",
+      "url": "https://www.mtgsalvation.com/deckbuilder",
+      "label": "Build a Deck"
+    },
+    {
+      "type": "web",
+      "url": "https://www.mtgsalvation.com/decks/2-green-aggro-mana-accel",
+      "label": "View a Deck"
+    }
+  ],
   "hero": {
     "img": {
       "src": "/img/mtgs-deckbuilder.png",

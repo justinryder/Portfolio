@@ -15,6 +15,18 @@
       "name": "ElasticSearch"
     }
   ],
+  "downloads": [
+    {
+      "type": "web",
+      "url": "https://www.dndbeyond.com/encounter-builder",
+      "label": "Build an Encounter"
+    },
+    {
+      "type": "web",
+      "url": "https://www.dndbeyond.com/encounters/d7016d70-0d90-48bc-b1ad-feec3534c784",
+      "label": "View an Encounter"
+    }
+  ],
   "hero": {
     "img": {
       "src": "/img/encounter-builder.png",
