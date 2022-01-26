@@ -1,0 +1,68 @@
+{
+  "title": "MTG Deck Builder",
+  "type": "professional",
+  "technologies": [
+    {
+      "name": "React"
+    },
+    {
+      "name": "Redux"
+    }
+  ],
+  "hero": {
+    "img": {
+      "src": "/img/mtgs-deckbuilder.png",
+      "alt": "MTGSalvation Deck Builder"
+    }
+  },
+  "pageSections": [
+    {
+      "heading": "About this Project",
+      "contents": [
+        {
+          "text": "Build, plan, and share your MTG decks"
+        },
+        {
+          "list": [
+            {
+              "text": "Quickly search the MTGS card database with advanced filtering controls"
+            },
+            {
+              "text": "View automatically updating deck stats as you plan out your deck"
+            },
+            {
+              "text": "Goldfish your deck with the hand simulator"
+            },
+            {
+              "text": "Share your creation and vote on your favorite decks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Credits",
+      "contents": [
+        {
+          "credits": [
+            {
+              "name": "Travis Howell",
+              "role": "Designer",
+              "url": "https://www.linkedin.com/in/travis-howell-b6463464/"
+            },
+            {
+              "name": "Justin Ryder",
+              "role": "Front End Engineer",
+              "url": "//www.justin-ryder.com"
+            },
+            {
+              "name": "Jason Roberts",
+              "role": "Back End Engineer",
+              "url": "https://www.linkedin.com/in/jason-roberts-64593330/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Twitch Extension",
+  "type": "professional",
+  "technologies": [
+    {
+      "name": "React"
+    },
+    {
+      "name": "Redux"
+    },
+    {
+      "name": "Twitch"
+    }
+  ],
+  "hero": {
+    "img": {
+      "src": "/img/ddb-twitch-extension.png",
+      "alt": "D&D Beyond Twitch Extension"
+    }
+  },
+  "pageSections": [
+    {
+      "heading": "About this Project",
+      "contents": [
+        {
+          "text": "Show off your D&D Beyond characters while live streaming your game! With real-time health, condition, and equipment tracking"
+        },
+        {
+          "list": [
+            {
+              "text": "Scalable stream overlay that dynamically resizes to any viewing resolution"
+            },
+            {
+              "text": "Live updates of health changes with fighting game-inspired health bar animations"
+            },
+            {
+              "text": "Hidden Konami code easter egg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Credits",
+      "contents": [
+        {
+          "credits": [
+            {
+              "name": "Jakie Allebach",
+              "role": "UI/UX Designer",
+              "url": "https://www.linkedin.com/in/jaclynallebach/"
+            },
+            {
+              "name": "Justin Ryder",
+              "role": "Front End Engineer",
+              "url": "//www.justin-ryder.com"
+            },
+            {
+              "name": "Jason Roberts",
+              "role": "Back End Engineer",
+              "url": "https://www.linkedin.com/in/jason-roberts-64593330/"
+            },
+            {
+              "name": "Aaron Loughary",
+              "role": "SysDev",
+              "url": null
+            },
+            {
+              "name": "David Queener",
+              "role": "QA",
+              "url": "https://www.linkedin.com/in/davidqueener/"
+            },
+            {
+              "name": "Zachary McKinnon",
+              "role": "Dev Manager",
+              "url": "https://www.linkedin.com/in/zachary-mckinnon/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

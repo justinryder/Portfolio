@@ -1,0 +1,89 @@
+{
+  "title": "Encounter Builder",
+  "type": "professional",
+  "technologies": [
+    {
+      "name": "React"
+    },
+    {
+      "name": "Redux"
+    },
+    {
+      "name": "DynamoDB"
+    },
+    {
+      "name": "ElasticSearch"
+    }
+  ],
+  "hero": {
+    "img": {
+      "src": "/img/encounter-builder.png",
+      "alt": "D&D Beyond Encounter Builder"
+    }
+  },
+  "pageSections": [
+    {
+      "heading": "About this Project",
+      "contents": [
+        {
+          "text": "Plan your D&D encounters with automatic difficulty calculation using the 5e rules! Search the entire D&D Beyond monster database to craft the perfect encounter for your players. Can you find the hidden easter eggs?"
+        },
+        {
+          "list": [
+            {
+              "text": "Built the Encounter Builder UI all the way from a bare bones prototype to a fully realized product"
+            },
+            {
+              "text": "Innovated on build processes and developed a feature flag based deployment system that allowed for rapid iteration and instant rollbacks"
+            },
+            {
+              "text": "Added visual flair to make the UI pop and feel immediately responsive to the user"
+            },
+            {
+              "text": "Developed with an accessibility-first, mobile-first mindset"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Credits",
+      "contents": [
+        {
+          "credits": [
+            {
+              "name": "Jakie Allebach",
+              "role": "UI/UX Designer",
+              "url": "https://www.linkedin.com/in/jaclynallebach/"
+            },
+            {
+              "name": "Justin Ryder",
+              "role": "Front End Engineer",
+              "url": "//www.justin-ryder.com"
+            },
+            {
+              "name": "Jason Roberts",
+              "role": "Back End Engineer",
+              "url": "https://www.linkedin.com/in/jason-roberts-64593330/"
+            },
+            {
+              "name": "Aaron Loughary",
+              "role": "SysDev",
+              "url": null
+            },
+            {
+              "name": "David Queener",
+              "role": "QA",
+              "url": "https://www.linkedin.com/in/davidqueener/"
+            },
+            {
+              "name": "Zachary McKinnon",
+              "role": "Dev Manager",
+              "url": "https://www.linkedin.com/in/zachary-mckinnon/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

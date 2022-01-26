@@ -11,6 +11,26 @@
       "description": "Whenever possible, I host all of my projects publicly on GitHub. I love coding in hackathons so there is no shortage of hastily built, but super fun projects there."
     },
     {
+      "name": "Encounter Builder",
+      "url": "/projects/encounter-builder.html",
+      "description": "Plan your D&D encounters with automatic difficulty calculation using the 5e rules! Search the entire D&D Beyond monster database to craft the perfect encounter for your players. Can you find the hidden easter eggs?"
+    },
+    {
+      "name": "Combat Tracker",
+      "url": "/projects/combat-tracker.html",
+      "description": "Run your planned or ad-hoc encounters with full initiative, turn, round, HP tracking, and quick monster stat lookup!"
+    },
+    {
+      "name": "Twitch Extension",
+      "url": "/projects/ddb-twitch-extension.html",
+      "description": "Show off your D&D Beyond characters with this beautiful, scalable stream overlay! With real-time health, condition, and equipment tracking"
+    },
+    {
+      "name": "MTG Deck Builder",
+      "url": "/projects/mtgs-deckbuilder.html",
+      "description": "Build, plan, share, and test your Magic: The Gathering decks."
+    },
+    {
       "name": "Baby Boomer",
       "url": "/projects/baby-boomer.html",
       "description": "Can AngularJS be used to create an infinite scroller? Yes. Should it? No. But I did it anyways! Play as a lost baby navigating the infinite aisles of a grocery store, dodging tipped carts and more."
