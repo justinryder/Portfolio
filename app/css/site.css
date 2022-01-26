@@ -23,56 +23,68 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none; }
+  content: "";
+  content: none;
+}
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent; }
+  background: transparent;
+}
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 del {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help; }
+  cursor: help;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* change border colour to suit your needs */
 hr {
@@ -81,73 +93,94 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 input, select {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 html {
   font-family: "Open Sans Condensed", sans-serif;
-  height: 100%; }
+  height: 100%;
+}
 
 a {
   color: #718516;
   font-weight: bold;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
-  a:visited {
-    color: #505F10; }
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #505F10;
+}
 
 .bulletedList {
   list-style-type: disc;
   padding: 1em 1em 0 2em;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+}
 
 .page {
   background-color: #CCCCCC;
   color: #333333;
   display: flex;
   flex-direction: column;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
 .pageSection {
-  background-color: #CCCCCC; }
-  @media (min-width: 50em) {
-    .pageSection-small {
-      display: inline-block;
-      vertical-align: top;
-      width: 32%;
-      padding: 0.5em; } }
-  .pageSection_header {
-    display: block;
-    font-size: 1.375rem;
-    font-weight: bold;
-    margin-top: 1em; }
-    .pageSection_header-sub {
-      font-size: 1.125rem;
-      font-weight: normal; }
-    @media (min-width: 50em) {
-      .resume_job .pageSection_header {
-        display: inline-block; }
-        .resume_job .pageSection_header-sub {
-          text-align: right;
-          float: right; } }
-    .pageSection_header img {
-      vertical-align: middle; }
-  .pageSection_text {
-    margin-top: 0.5em; }
+  background-color: #CCCCCC;
+}
+@media (min-width:50em) {
+  .pageSection-small {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    padding: 0.5em;
+  }
+}
+.pageSection_header {
+  display: block;
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.pageSection_header-sub {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+@media (min-width:50em) {
+  .resume_job .pageSection_header {
+    display: inline-block;
+  }
+  .resume_job .pageSection_header-sub {
+    text-align: right;
+    float: right;
+  }
+}
+.pageSection_header img {
+  vertical-align: middle;
+}
+.pageSection_text {
+  margin-top: 0.5em;
+}
 
 .pageHeader {
   display: flex;
@@ -155,81 +188,105 @@ a {
   align-items: center;
   padding: 1em 2em;
   background-color: #333333;
-  color: #FFFFFF; }
-  .pageHeader_heading {
-    font-size: 2.625rem; }
-  .pageHeader_nav {
-    font-size: 1.375rem; }
+  color: #FFFFFF;
+}
+.pageHeader_heading {
+  font-size: 2.625rem;
+}
+.pageHeader_nav {
+  font-size: 1.375rem;
+}
 
 .pageContent {
   flex-grow: 1;
   max-width: 80em;
   align-self: center;
-  padding: 1em 2em; }
-  @media (max-width: 30em) {
-    .pageContent {
-      padding: 0.5em 1em; } }
-  .pageContent_header {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.625rem;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em; }
-    .pageContent_header + .pageContent_header:before {
-      content: '-';
-      margin: 0 0.25em; }
-    .pageContent_header-sub {
-      font-weight: normal;
-      font-size: 1.25rem; }
-    .pageContent_header-full {
-      display: block; }
-  .pageContent_row {
-    display: block; }
-  .pageContent_youtube {
-    max-width: 100%;
-    margin-top: 1em; }
+  padding: 1em 2em;
+}
+@media (max-width:30em) {
+  .pageContent {
+    padding: 0.5em 1em;
+  }
+}
+.pageContent_header {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.625rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.pageContent_header + .pageContent_header:before {
+  content: "-";
+  margin: 0 0.25em;
+}
+.pageContent_header-sub {
+  font-weight: normal;
+  font-size: 1.25rem;
+}
+.pageContent_header-full {
+  display: block;
+}
+.pageContent_row {
+  display: block;
+}
+.pageContent_youtube {
+  max-width: 100%;
+  margin-top: 1em;
+}
 
 .pageFooter {
   background-color: #333333;
   color: #FFFFFF;
-  padding: 1em 2em; }
+  padding: 1em 2em;
+}
 
 .mainNavLinks {
-  display: flex; }
+  display: flex;
+}
 
 .mainNavLinks_link {
-  display: flex; }
-  .mainNavLinks_link + .mainNavLinks_link:before {
-    content: '/';
-    margin: 0 0.5em; }
+  display: flex;
+}
+.mainNavLinks_link + .mainNavLinks_link:before {
+  content: "/";
+  margin: 0 0.5em;
+}
 
 .hero {
   max-width: 100%;
   background-color: #CCCCCC;
-  color: #FFFFFF; }
-  .hero-home {
-    padding: 2em; }
-  .hero-armadyne {
-    background-image: url("/img/Armadyne_Level_01.png");
-    background-position: center;
-    background-size: cover; }
-  .hero_header, .hero_content {
-    display: block;
-    max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 0.25em; }
-  .hero_header {
-    margin-bottom: 0.5em;
-    font-size: 1.625rem; }
-  .hero_content {
-    font-size: 1rem; }
-  .hero_image {
-    max-width: 100%;
-    max-height: 30rem; }
+  color: #FFFFFF;
+}
+.hero-home {
+  padding: 2em;
+}
+.hero-armadyne {
+  background-image: url("/img/Armadyne_Level_01.png");
+  background-position: center;
+  background-size: cover;
+}
+.hero_header, .hero_content {
+  display: block;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.25em;
+}
+.hero_header {
+  margin-bottom: 0.5em;
+  font-size: 1.625rem;
+}
+.hero_content {
+  font-size: 1rem;
+}
+.hero_image {
+  max-width: 100%;
+  max-height: 30rem;
+}
 
 .credit_name {
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 .credit_role:before {
-  content: '-';
-  margin-right: 0.25em; }
+  content: "-";
+  margin-right: 0.25em;
+}

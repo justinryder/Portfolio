@@ -3,7 +3,7 @@
 var gulp = require('gulp'),
     del = require('del'),
     handlebars = require('handlebars'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-sass')(require('sass')),
     File = require('vinyl'),
     fs = require('fs'),
     mergeStream = require('merge-stream'),
@@ -31,6 +31,16 @@ function replaceCodeLinks(obj) {
     }
   }
 }
+
+/**
+ * clean tasks
+ */
+
+function clean() {
+  return del(['./app/**/*'])
+}
+
+gulp.task('clean', clean)
 
 /**
 * build tasks
@@ -119,7 +129,7 @@ function buildHandlebars() {
       })))
 }
 
-gulp.task('build:handlebars', ['register:partials'], buildHandlebars)
+gulp.task('build:handlebars', gulp.series('register:partials', buildHandlebars))
 
 function buildImg() {
   return gulp.src('./src/img/**/*')
@@ -142,31 +152,21 @@ function buildRoot() {
 
 gulp.task('build:root', buildRoot)
 
-gulp.task('build', ['clean', 'register:partials'], function () {
+gulp.task('build', gulp.series('clean', 'register:partials', function () {
   return mergeStream(
     buildCss(),
     buildHandlebars(),
     buildImg(),
     buildJs(),
     buildRoot())
-})
-
-/**
-* clean tasks
-*/
-
-function clean() {
-  return del(['./app/**/*'])
-}
-
-gulp.task('clean', clean)
+}))
 
 /**
 * watch tasks
 */
 
 function watchCss() {
-  gulp.watch('./src/sass/**/*.scss', ['build:css'])
+  gulp.watch('./src/sass/**/*.scss', gulp.series('build:css'))
   .on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type);
   })
@@ -179,7 +179,7 @@ function watchHandlebars() {
     'src/handlebars/**/*.handlebars',
     'src/json/**/*.json'
   ],
-  ['build:handlebars'])
+  gulp.series('build:handlebars'))
   .on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type);
   })
@@ -188,7 +188,7 @@ function watchHandlebars() {
 gulp.task('watch:handlebars', watchHandlebars)
 
 function watchImg() {
-  gulp.watch('./src/img/**/*', ['build:img'])
+  gulp.watch('./src/img/**/*', gulp.series('build:img'))
   .on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type);
   })
@@ -197,7 +197,7 @@ function watchImg() {
 gulp.task('watch:img', watchImg)
 
 function watchJs() {
-  gulp.watch('./src/js/**/*.js', ['build:js'])
+  gulp.watch('./src/js/**/*.js', gulp.series('build:js'))
   .on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type);
   })
@@ -206,22 +206,22 @@ function watchJs() {
 gulp.task('watch:js', watchJs)
 
 function watchRoot() {
-  gulp.watch('./src/root/**/*', ['build:root'])
+  gulp.watch('./src/root/**/*', gulp.series('build:root'))
   .on('change', function(event) {
     console.log('File ' + event.path + ' was ' + event.type);
   })
 }
 
-gulp.task('watch', function () {
-  watchCss()
-  watchHandlebars()
-  watchImg()
-  watchJs()
-  watchRoot()
-})
+gulp.task('watch', gulp.parallel(
+  watchCss,
+  watchHandlebars,
+  watchImg,
+  watchJs,
+  watchRoot,
+))
 
 /**
 * default task
 */
 
-gulp.task('default', ['build'])
+gulp.task('default', gulp.series('build'))
