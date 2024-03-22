@@ -2,6 +2,24 @@
   "jobs": [
 	{
 	  "employer": {
+		  "name": "Activision",
+		  "website": "https://www.activision.com/",
+		  "img": {
+			  "src": "/img/Activision-logo.png",
+			  "alt": "Activision Logo",
+			  "width": "auto",
+			  "height": "2em"
+		  }
+	  },
+	  "jobTitle": "UI Engineer",
+	  "startDate": "March 2022",
+	  "endDate": "Present",
+	  "responsibilities": [
+		  "Building live operable commerce features for Call of Duty: Warzone Mobile utilizing C++, Lua, and web technologies"
+	  ]
+	},
+	{
+	  "employer": {
 		  "name": "Carvana",
 		  "website": "https://www.carvana.com/",
 		  "img": {
@@ -13,9 +31,10 @@
 	  },
 	  "jobTitle": "Senior Front End Engineer II",
 	  "startDate": "August 2020",
-	  "endDate": "Present",
+	  "endDate": "March 2022",
 	  "responsibilities": [
-		  "Building an internal UI platform to accelerate development of internal apps"
+		  "Built a data-driven survey UI and WYSIWYG survey builder to empower product owners to rapidly create and deploy new internal data entry apps to meet their specific needs.",
+		  "Built an internal UI platform to accelerate development of internal apps"
 	  ]
 	},
 	{
